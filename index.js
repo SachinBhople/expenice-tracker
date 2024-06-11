@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.use(logger)
-
+app.options("*", cors())
 app.use("/api/auth", require("./routes/auth.routes"))
 app.use("/api/account", require("./routes/account.routes"))
 

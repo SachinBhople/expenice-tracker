@@ -6,6 +6,6 @@ const router = require("express").Router()
 router
     .post("/credit", accountController.credit)
     .post("/debit", accountController.debit)
-module.exports = router
 
 module.exports = router
+
